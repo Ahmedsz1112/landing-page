@@ -11,11 +11,12 @@
 .btnFrist {
     background: #000;
     color: #fff;
-    border: none;
+    border: 1px solid #000;
     padding: 10px 30px;
     border-radius: 5px;
     font-weight: 600;
     transition: all .3s;
+    
 }
 .btnFrist:hover {
     border: 1px solid #000;
@@ -43,4 +44,104 @@
     border: 2px solid #202020af;
     border-radius: 3px;
     z-index: -1;
+}
+
+.btn-bottom {
+    content: '';
+    position: fixed;
+    bottom: 10px;
+    right: 150px;
+    width: 50px;
+    height: 50px;
+    background: #000;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    display: none;
+}
+
+/* Services */
+
+.line {
+    width: 70px;
+    height: 2px;
+    margin-right: 20px;
+    background: #000;
+}
+
+.img-ser {
+    width: 590px;
+}
+
+.border-i i {
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.line-heigh {
+    position: absolute;
+    width: 1px;
+    height: 70px;
+    background: #00000038;
+    left: 19px;
+    top: 80px;
+}
+
+/* customers */
+.customers .btn-right {
+    width: 50px;
+    height: 50px;
+    background: #e7e7e7;
+    border: none;
+    color: #000;
+    border-radius: 3px;
+    margin-right: 20px;
+
+}
+.customers .btn-left {
+    content: '';
+    position: relative;
+    bottom: -30px;
+    left: 0px
+
+}
+.customers .title {
+    font-size: 44px;
+}
+.cust-card {
+    position: absolute;
+    left: 57%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    gap: 40px;
+}
+
+.card {
+    width: 31rem !important;
+    height: 28rem;
+    background: #000000e0;
+    color: #fff;
+}
+
+.card .content-all {
+    display: flex;
+}
+
+
+.card .content-all div p {
+    font-size: 13px;
+}
+.card .content-all .cust-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
