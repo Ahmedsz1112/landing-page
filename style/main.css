@@ -16,7 +16,6 @@
     border-radius: 5px;
     font-weight: 600;
     transition: all .3s;
-    
 }
 .btnFrist:hover {
     border: 1px solid #000;
@@ -37,7 +36,7 @@
 .border-image {
     content: '';
     position: absolute;
-    top: -20px;
+    top: 23px;
     left: 40px;
     width: 150px;
     height: 150px;
@@ -67,10 +66,6 @@
     height: 2px;
     margin-right: 20px;
     background: #000;
-}
-
-.img-ser {
-    width: 590px;
 }
 
 .border-i i {
@@ -103,36 +98,28 @@
     border: none;
     color: #000;
     border-radius: 3px;
-    margin-right: 20px;
+    margin-right: 10px;
 
 }
-.customers .btn-left {
-    content: '';
-    position: relative;
-    bottom: -30px;
-    left: 0px
-
+.image-custom {
+    width: 50%;
 }
 .customers .title {
     font-size: 44px;
 }
-.cust-card {
+.custom-position {
     position: absolute;
-    left: 57%;
-    top: 70%;
-    transform: translate(-50%, -50%);
-    gap: 40px;
+    top: 50%;
+    transform: translateY(-20%);
 }
 
 .card {
-    width: 31rem !important;
-    height: 28rem;
     background: #000000e0;
     color: #fff;
 }
-
 .card .content-all {
     display: flex;
+    margin: 20px 0;
 }
 
 
@@ -144,4 +131,101 @@
     height: 50px;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+/* subscribe */
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    position: relative;
+    bottom: -25px;
+}
+.border-none {
+    border: none;
+    outline: none;
+}
+
+/* footer */
+footer {
+    background: #000;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.text-light {
+    color: #fff !important;
+}
+
+.fa-brands {
+    font-weight: 400;
+    padding: 5px;
+    background: #313131;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin-right: 10px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.icons i:hover {
+    background: #fff;
+    color: #000;
+}
+
+.link {
+    transition: all .3s;
+}
+.link:hover {
+    color: #11e7d5 !important;
+    cursor: pointer;
+}
+
+/* media */
+@media (max-width: 991px){
+    .home .row .col-lg-8 h1 {
+        font-size: 80px;
+        font-weight: 500;
+    }
+    .custom-flex {
+        flex-direction: column;
+    }
+    .card-2 {
+        display: none;
+    }
+    .custom-position {
+        position: relative;
+        bottom: 0%;
+        transform: translateY(0%);
+    }
+    .customers .title {
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .customers .btn-left {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .image-custom {
+        display: none;
+    }
+    .support-width {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 1200px){
+    .card-2 {
+        display: none;
+    }
+    .card-1 {
+        padding: 0px !important;
+    }
+    .custom-position {
+        margin-top: 30px;
+    }
 }
