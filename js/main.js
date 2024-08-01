@@ -1,21 +1,38 @@
+        let counterEl = document.querySelectorAll(".counter");
+        let section = document.querySelector(".three");
+        let btn = document.querySelector("button.btn-bottom");
+        let started = false;
 
+        window.onscroll = function(){
+            if(window.scrollY >= section.offsetTop){
+                if(!started){
+                counterEl.forEach((el) => count(el));
+                }
+                started = true;
+            }
+        }
 
+        function count(el){
+            let goal = el.dataset.goal;
+            let counter = setInterval(() => {
+                el.textContent++ + "+";
+                if(el.textContent == goal){
+                    clearInterval(counter)
+                }
+            }, 20)
+        };
 
-function count(){
-    let counterEl1 = document.querySelector(".counter1");
-    let counterEl2 = document.querySelector(".counter2");
-    let counterEl3 = document.querySelector(".counter3");
-    console.log(counterEl1 , counterEl2 , counterEl3)
+        window.addEventListener("scroll", () => {
+            if(window.scrollY >= 300){
+                btn.classList.add("show")
+            }else {
+                btn.classList.remove("show")
+            }
+        } );
 
-    for(let i=0;i<400; i++){
-        counterEl1[i].innerHTML += 1 
-    }
+        btn.addEventListener("click", () => {
+            let heigth = document.body.scrollHeight;
+            window.scroll(0 ,heigth)
+        });
+            
 
-    // for(let i=0;i<600; i++){
-    //     counterEl2.innerHTML = `${i+1} +`
-    // }
-
-    // for(let i=0;i<100; i++){
-    //     counterEl3.innerHTML = `${i+1} +`
-    // }
-}
