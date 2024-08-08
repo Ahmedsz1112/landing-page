@@ -1,3 +1,4 @@
+        
         let counterEl = document.querySelectorAll(".counter");
         let section = document.querySelector(".three");
         let btn = document.querySelector("button.btn-bottom");
